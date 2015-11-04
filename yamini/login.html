@@ -1,0 +1,28 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<input type="text" id="username" placeholder="Username"><br>
+		<input type="password" id="password" placeholder="Password"><br>
+		<button name="login" id="loginBtn" onclick="validate()">Sign In</button>
+		<label name="result" id="resultMsg"></label>
+
+		<!-- Java Script -->
+		<script>
+			function validate()
+			{
+				var userName=document.getElementById("username").value;
+				var password=document.getElementById("password").value;
+				if(userName=='BeingZero' && password=='BeingZero'){
+					document.getElementById("resultMsg").innerHTML ="Success";
+					document.getElementById("username").style.visibility = "hidden";
+					document.getElementById("password").style.visibility = "hidden";
+					document.getElementById("loginBtn").style.visibility = "hidden";
+				}
+				else{
+					document.getElementById("resultMsg").innerHTML ="Failure";
+				}
+			}
+		</script>
+	</body>
+</html>
