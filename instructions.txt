@@ -1,0 +1,4 @@
+cd C:\Users\Yamini\Desktop\creativeWebDevelopment
+git add -A
+git commit -m "Any message describing your change"
+git push -u origin master
